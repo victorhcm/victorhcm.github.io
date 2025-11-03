@@ -2,3 +2,47 @@ baseURL: https://victorhcm.github.io/
 languageCode: en-us
 title: Victor Melo
 theme: ["PaperMod"]
+
+params:
+  math: true
+  homeInfoParams:
+    Title: Hello, there!
+    Content: This is a public collection of my notes I had scattered over other forums and notebooks.
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
+
+menu:
+  main:
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 10
+    - identifier: archive
+      name: archive
+      url: /archive/
+      weight: 11
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
+
+caches:
+  images:
+    dir: :cacheDir/images
