@@ -7,7 +7,7 @@ params:
   math: true
   homeInfoParams:
     Title: Hello, there!
-    Content: This is a public collection of my notes I had scattered over other forums and notebooks.
+    Content: This is a public collection of notes I had scattered over some personal notebooks, forums, stackoverflow, among others.
 
 markup:
   goldmark:

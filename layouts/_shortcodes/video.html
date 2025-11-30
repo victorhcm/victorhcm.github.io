@@ -1,0 +1,8 @@
+<video 
+ src="{{ .Get "src" }}"
+ {{ with .Get "controls" }}controls{{ end }}
+ {{ with .Get "autoplay" }}autoplay{{ end }}
+ style="max-width:100%; height:auto; display:block; padding-bottom:20px" 
+>
+Error loading video.
+</video>
