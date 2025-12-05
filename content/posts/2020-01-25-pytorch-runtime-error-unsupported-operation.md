@@ -17,7 +17,7 @@ bar.copy_(mu * bar)  # ok!
 foo.copy_(mu * foo)  # error
 ```
 
-`bar.copy_(mu * bar)` works, while when I try to `foo.copy_()` the result, it gives the following error:
+which used to work on 1.0.0. `bar.copy_(mu * bar)` works, while when I try to `foo.copy_()` the result, it gives the following error:
 
 > RuntimeError: unsupported operation: more than one element of the written-to tensor refers to a single memory location. Please clone() the tensor before performing the operation.
 
